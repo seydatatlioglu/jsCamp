@@ -42,3 +42,10 @@ save2(undefined,student) //1 seyda bolu 20
 /* array */
 let students=["eda","seda","engin","seyda",student,{id:2,name:"adres1",city:"izmir"}]
 console.log(students) //['eda', 'seda', 'engin', 'seyda']
+
+/* rest */
+let showProducts=function(id,...product){
+    console.log(id) // 1
+    console.log(product) // ['elma', 'armut', 'karpuz']
+}
+showProducts(1,"elma","armut","karpuz")
