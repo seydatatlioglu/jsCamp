@@ -49,3 +49,33 @@ let showProducts=function(id,...product){
     console.log(product) // ['elma', 'armut', 'karpuz']
 }
 showProducts(1,"elma","armut","karpuz")
+
+/* spread */
+let points=[1,2,3,4,78,50,10]
+console.log(...points) //1 2 3 4 78 50 10
+console.log(Math.max(points)) //NaN
+console.log(Math.max(...points)) //78
+console.log(..."ABCDEFGHIJKLMNOPRSTUVYZWQ") //A B C D E F G H I J K L M N O P R S T U V Y Z W Q
+console.log("ABCDEFGHIJKLMNOPRSTUVYZWQ") //ABCDEFGHIJKLMNOPRSTUVYZWQ
+
+/* destructuring */
+let nufus=[10000,20000,30000]
+let[s,m,h]=nufus
+console.log(s,m) //10000
+console.log(m) //20000
+console.log(h) //30000
+
+let bilgi={i:2,n:"isim",sehir:"kütahya"}
+let{i,n,sehir}=bilgi
+console.log(i) //2
+console.log(n) //isim
+console.log(sehir) //kütahya
+console.log(bilgi.sehir)//kütahya
+console.log(bilgi["sehir"])//kütahya
+
+let insan=[1,"test","sehir"]
+let[number,adi,yer]=insan
+console.log(number)//1
+console.log(insan[0])//1
+console.log(adi)//test
+console.log(yer)//sehir
